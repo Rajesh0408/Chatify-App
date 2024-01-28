@@ -14,3 +14,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+1. Register Page
+![Screenshot_20240128-222511](https://github.com/Rajesh0408/Chatify-App/assets/125728051/8c8c2cdb-1b21-413a-bd43-0805eeb5d679)
+
+2. Login Page
+
