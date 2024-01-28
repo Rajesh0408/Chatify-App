@@ -32,6 +32,8 @@ class CustomInputField extends StatelessWidget {
           ),
           hintText: hintText,
           hintStyle: TextStyle(color: Colors.white54)),
+
+
     );
   }
 }
@@ -67,7 +69,10 @@ class CustomTextField extends StatelessWidget {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10.0),
           borderSide: BorderSide.none,
-        )
+        ),
+        hintStyle: TextStyle(color: Colors.white54),
+        hintText: hintText,
+        prefixIcon: Icon(icon, color: Colors.white54,)
       ),
     );
   }

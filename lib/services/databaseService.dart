@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 
 //models
 import '../models/chatMessage.dart';
@@ -14,6 +15,16 @@ class DatabaseService {
 
   Future<DocumentSnapshot> getUser(String uid) {
     return db.collection(USER_COLLECTION).doc(uid).get();
+  }
+
+  Future<QuerySnapshot> getUsers({String? name}) {
+    Query _query = db.collection(USER_COLLECTION);
+    if (name != null) {
+      _query = _query
+          .where("name", isGreaterThanOrEqualTo: name)
+          .where("name", isLessThanOrEqualTo: name + "z");
+    }
+    return _query.get();
   }
 
   Stream<QuerySnapshot> getChatsForUser(String _uid) {
@@ -96,5 +107,14 @@ class DatabaseService {
     } catch (e) {
       print(e);
     }
+  }
+
+  Future<DocumentReference?> createChat(Map<String, dynamic> _data) async{
+    try{
+      DocumentReference _chat = (await db.collection(CHAT_COLLECTION).add(_data)) ;
+      return _chat;
+  } catch(e) {
+      print(e);
+  }
   }
 }
