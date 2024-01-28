@@ -3,7 +3,7 @@
 A new Flutter project.
 
 1. Register Page
-![Screenshot_20240128-222511](https://github.com/Rajesh0408/Chatify-App/assets/125728051/8c8c2cdb-1b21-413a-bd43-0805eeb5d679)
+![Screenshot_20240128-222511](https://github.com/Rajesh0408/Chatify-App/assets/125728051/8c8c2cdb-1b21-413a-bd43-0805eeb5d679 = 200x400)
 
 2. Login Page
 ![Screenshot_20240128-222501](https://github.com/Rajesh0408/Chatify-App/assets/125728051/2d8e64e8-7902-47eb-bd0e-4c2be2ddc54b)
